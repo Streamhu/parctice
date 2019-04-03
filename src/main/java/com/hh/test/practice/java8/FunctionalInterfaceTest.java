@@ -1,6 +1,8 @@
 package com.hh.test.practice.java8;
 
 import java.util.*;
+import java.util.function.Consumer;
+import java.util.function.Function;
 import java.util.function.Predicate;
 
 /**
@@ -22,6 +24,28 @@ public class FunctionalInterfaceTest {
 
         System.out.println("输出大于 3 的所有数字:");
         eval(list, n -> n > 3 );
+
+        // 测试java8四大函数式接口
+        testFour();
+    }
+
+    public static void testFour(){
+        // 函数式接口Function
+        Function<Integer, Integer> func = p -> p*10;
+        Integer result = func.apply(10);
+        System.out.println("result = " + result);
+        // 函数式接口Consumer
+        Consumer<String> consumer = p -> System.out.println("p = " + p);
+        consumer.accept("消费者你好啊");
+        // 函数式接口Supplier
+        Supplier<Integer> supplier = () -> 100;
+        Integer supplierResult = supplier.get();
+        System.out.println("supplierResult = " + supplierResult);
+        // 函数式接口
+        Predicate<Integer> predicate = p -> p % 2 == 0;
+        Boolean predicateResult = predicate.test(100);
+        System.out.println("predicateResult = " + predicateResult);
+
     }
 
     /**
