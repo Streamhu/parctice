@@ -6,7 +6,7 @@ package com.hh.test.practice.design.interpreter;
  * @author huhui
  * @since 2019/4/25 8:47
  */
-public class Interpreter {
+public class InterpreterTest {
 
     public static void main(String[] args) {
         Context bus = new Context();
