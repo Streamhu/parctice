@@ -4,6 +4,7 @@ import java.util.*;
 import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Predicate;
+import java.util.function.Supplier;
 
 /**
  * TODO
@@ -30,21 +31,35 @@ public class FunctionalInterfaceTest {
     }
 
     public static void testFour(){
+
+        // 原有写法
+        Function<Integer, String> functionOrigin = new Function() {
+            @Override
+            public Object apply(Object o) {
+                return o.toString();
+            }
+        };
+        String result1 = functionOrigin.apply(3);
         // 函数式接口Function
-        Function<Integer, Integer> func = p -> p*10;
-        Integer result = func.apply(10);
-        System.out.println("result = " + result);
+        Function<Integer, String> function = a -> a.toString();
+        // 对比结果
+        System.out.println("java7测试 = " + result1);
+        System.out.println("lambda测试function = " + function.apply(3));
+
         // 函数式接口Consumer
-        Consumer<String> consumer = p -> System.out.println("p = " + p);
-        consumer.accept("消费者你好啊");
+        Consumer<Integer> consumer = a -> System.out.println("consumer测试 = " + a);
+        consumer.accept(12);
+
         // 函数式接口Supplier
-        Supplier<Integer> supplier = () -> 100;
-        Integer supplierResult = supplier.get();
-        System.out.println("supplierResult = " + supplierResult);
-        // 函数式接口
-        Predicate<Integer> predicate = p -> p % 2 == 0;
-        Boolean predicateResult = predicate.test(100);
-        System.out.println("predicateResult = " + predicateResult);
+        Supplier<String> supplier = () -> "hello world" ;
+        String result2 = supplier.get();
+        System.out.println("supplier测试 " + result2);
+
+        // 函数式接口Predicate断言
+        Predicate<Integer> predicate = a -> a > 10;
+        Boolean result3 = predicate.test(3);
+        System.out.println("predicate测试 = " + result3);
+
 
     }
 

@@ -7,14 +7,14 @@ package com.hh.test.practice.java8;
  * @since 2019/1/31 10:16
  */
 
-public interface Supplier<T> {
+public interface SupplierTest<T> {
     T get();
 }
 
 class Car {
     //Supplier是jdk1.8的接口，这里和lamda一起使用了
-    public static Car create(final Supplier<Car> supplier) {
-        return supplier.get();
+    public static Car create(final SupplierTest<Car> supplierTest) {
+        return supplierTest.get();
     }
 
     public static void collide(final Car car) {

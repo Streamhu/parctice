@@ -1,5 +1,10 @@
 package com.hh.test.practice.java8;
 
+import com.hh.test.practice.generic.Generator;
+import sun.nio.cs.Surrogate;
+
+import java.net.InterfaceAddress;
+
 /**
  * lambda表达式入门
  *
@@ -41,6 +46,7 @@ public class LambdaTest {
 
     interface MathOperation{
         int operation(int a, int b);
+
     }
 
     interface GreetingService{

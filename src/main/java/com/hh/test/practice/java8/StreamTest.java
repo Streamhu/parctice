@@ -24,7 +24,7 @@ public class StreamTest {
         count = strings.stream().filter(string -> string.length() == 3).count();
         System.out.println("字符串长度为 3 的数量为: " + count);
 
-        // fliter的使用
+        // filter的使用
         List<String> filtered = strings.stream().filter(string -> !string.isEmpty()).collect(Collectors.toList());
         System.out.println("筛选后的列表: " + filtered);
 

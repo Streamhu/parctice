@@ -18,11 +18,14 @@ public class MethodReferencesTest {
         cars.add(Car.create( Car::new ));
         // 静态方法引用
         cars.forEach(Car::collide);
+        cars.forEach(car -> Car.collide(car));
         // 特定类的任意对象的方法引用
         cars.forEach(Car::repair);
+        cars.forEach(car -> car.repair());
         // 特定对象的方法引用
         final Car police = Car.create( Car::new );
         cars.forEach( police::follow );
+        cars.forEach(car -> police.follow(car));
 
     }
 
