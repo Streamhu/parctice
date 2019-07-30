@@ -70,6 +70,10 @@ public class StreanTest1 {
         List<Integer> mapList = intList.stream().map(a -> a * a ).distinct().limit(4).skip(1).collect(Collectors.toList());
         mapList.forEach(s -> System.out.println(s));
 
+        // peek的使用(Consumer，一半调试用，或者做一些外部处理，会返回原来的新的Stream)
+        List<Integer> intList2 = Arrays.asList(0,1,1,2,3,4,5,6,7);
+        List<Integer> mapList2 = intList2.stream().peek(a -> System.out.println("peek->" + a)).collect(Collectors.toList());
+
         // sorted的使用(升序)
         List<Integer> integerList = Arrays.asList(3,2,1,4,5,6);
         List<Integer> sortedList = integerList.stream().sorted().collect(Collectors.toList());
