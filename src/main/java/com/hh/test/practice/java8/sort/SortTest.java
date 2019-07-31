@@ -27,7 +27,7 @@ public class SortTest {
         users.add(new User("jessica",15,13));
 
         // 传统方式排序
-        // traditionCompareByName(users);
+        traditionCompareByName(users);
 
         // java8写法
         testJava8(users);
@@ -52,17 +52,6 @@ public class SortTest {
     }
 
     public static void traditionCompareByName(List<User> users){
-        // Comparator方法，传一个比较器
-        Collections.sort(users, new Comparator<User>(){
-            @Override
-            public int compare(User o1, User o2) {
-                return o1.getAge() - o2.getAge();
-            }
-        });
-        // Comparable方法，需要对象实现Comparable
-        Collections.sort(users);
-        for (User user : users) {
-            System.out.println(user);
-        }
+
     }
 }

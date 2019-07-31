@@ -14,13 +14,13 @@ public class CollectorTest {
 
     public static void main(String[] args) {
         // 测试一个对象转换成另一个对象
-        // testConvert();
+        testConvert();
         // 测试两个集合之间的关系（交集、差集、并集）
         testMath();
         // 测试分组
-        // testGroup();
+        testGroup();
         // 统计类测试
-        // testSummaryStatistics();
+        testSummaryStatistics();
     }
 
     private static void testSummaryStatistics(){
