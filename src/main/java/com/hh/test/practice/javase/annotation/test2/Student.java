@@ -1,4 +1,4 @@
-package com.hh.test.practice.annotation.test2;
+package com.hh.test.practice.javase.annotation.test2;
 
 /**
  * TODO

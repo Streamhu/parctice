@@ -12,7 +12,7 @@ import java.lang.reflect.Method;
  * @author huhui
  * @since 2019/8/13 15:37
  */
-public class CglibProxy implements MethodInterceptor {
+public class Hacker implements MethodInterceptor {
 
     @Override
     public Object intercept(Object o, Method method, Object[] objects, MethodProxy methodProxy) throws Throwable {

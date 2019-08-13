@@ -1,4 +1,4 @@
-package com.hh.test.practice.javaSE.annotation.enums;
+package com.hh.test.practice.javase.enums;
 
 public enum EnumTest {
 

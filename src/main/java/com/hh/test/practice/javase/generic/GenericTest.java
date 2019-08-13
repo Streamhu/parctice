@@ -1,4 +1,4 @@
-package com.hh.test.practice.generic;
+package com.hh.test.practice.javase.generic;
 
 import java.util.*;
 

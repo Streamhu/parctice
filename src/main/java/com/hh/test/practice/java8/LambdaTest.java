@@ -1,9 +1,6 @@
 package com.hh.test.practice.java8;
 
-import com.hh.test.practice.generic.Generator;
-import sun.nio.cs.Surrogate;
-
-import java.net.InterfaceAddress;
+import com.hh.test.practice.javase.generic.Generator;
 
 /**
  * lambda表达式入门

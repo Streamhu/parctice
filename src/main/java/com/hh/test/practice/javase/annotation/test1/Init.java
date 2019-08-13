@@ -1,4 +1,4 @@
-package com.hh.test.practice.annotation.test1;
+package com.hh.test.practice.javase.annotation.test1;
 
 import java.lang.annotation.*;
 
