@@ -1,6 +1,4 @@
-package com.hh.test.practice.enums;
-
-import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
+package com.hh.test.practice.javaSE.annotation.enums;
 
 /**
  * TODO

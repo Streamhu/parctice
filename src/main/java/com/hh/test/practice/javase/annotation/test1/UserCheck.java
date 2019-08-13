@@ -1,4 +1,4 @@
-package com.hh.test.practice.annotation;
+package com.hh.test.practice.annotation.test1;
 
 import java.lang.reflect.Field;
 
