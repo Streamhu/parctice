@@ -1,6 +1,5 @@
 package com.hh.test.practice.java8;
 
-import com.hh.test.practice.javase.generic.Generator;
 
 /**
  * lambda表达式入门
